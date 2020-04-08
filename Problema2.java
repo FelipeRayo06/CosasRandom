@@ -8,6 +8,7 @@ public class Problema2 {
 		System.out.println("Triángulos a ingresar");
 		triangulos = input.nextInt();
 		for(i=1; i<=triangulos; i++) {
+			System.out.println("Ingrese los valores de un triangulo");
 			System.out.println("Ingrese el valor del lado 1");
 			lado1= input.nextInt();
 			System.out.println("Ingrese el valor del lado 2");
@@ -24,10 +25,16 @@ public class Problema2 {
 				isoceles++;
 			}else {
 				escalenos++;
-			}
+			}		
 		}
+		
 		System.out.println("Triangulos equilateros ingresados"+equilateros);
 		System.out.println("Triangulos isoceles ingresados"+isoceles);
 		System.out.println("Triangulos escalenos ingresados"+escalenos);
+		
+		if(equilateros>isoceles & equilateros>escalenos & isoceles>escalenos) {
+			System.out.println("Triangulos equilateros ingresados"+equilateros);
+		}
+		
 	}
 }
